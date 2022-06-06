@@ -28,9 +28,6 @@ jobs:
         uses: coturiv/setup-ionic@v1
         with:
           cordova-version: 8
-      - name: Add Scripts
-        run: |
-             npm i @ionic/app-scripts --force
       - name: Add Platform
         run: |
          ionic cordova platform add android@10.0.0 --nofetch
