@@ -30,4 +30,4 @@ jobs:
          npm i cordova-android
       - name: Add Platform
         run: |
-         ionic cordova platform add android@10.1.1 --nofetch
+         ionic cordova platform add android@10.0.0 --nofetch
