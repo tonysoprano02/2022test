@@ -32,28 +32,29 @@ jobs:
 
       - name: typings
         run: npm i -g @ionic/app-scripts
+      - name: info
+        run: ionic info
+#       - name: Add Android platform
+#         run: ionic cordova platform add android@10.0.0
 
-      - name: Add Android platform
-        run: ionic cordova platform add android@10.0.0
+#       - name: Build Android Dev APK
+#         run: ionic cordova build android
 
-      - name: Build Android Dev APK
-        run: ionic cordova build android
+#       - name: Build Android Release APK
+#         run: ionic cordova build android --release --prod
 
-      - name: Build Android Release APK
-        run: ionic cordova build android --release --prod
+#       - name: Generate the Android App Bundle
+#         working-directory: ./platforms/android/
+#         run: ./gradlew bundle
 
-      - name: Generate the Android App Bundle
-        working-directory: ./platforms/android/
-        run: ./gradlew bundle
+#       - name: Upload dev APK
+#         uses: actions/upload-artifact@v1
+#         with:
+#           name: app-dev
+#           path: platforms/android/app/build/outputs/apk/debug/app-debug.apk
 
-      - name: Upload dev APK
-        uses: actions/upload-artifact@v1
-        with:
-          name: app-dev
-          path: platforms/android/app/build/outputs/apk/debug/app-debug.apk
-
-      - name: Upload release bundle
-        uses: actions/upload-artifact@v1
-        with:
-          name: app-release
-          path: platforms/android/app/build/outputs/bundle/release/app.aab
+#       - name: Upload release bundle
+#         uses: actions/upload-artifact@v1
+#         with:
+#           name: app-release
+#           path: platforms/android/app/build/outputs/bundle/release/app.aab
