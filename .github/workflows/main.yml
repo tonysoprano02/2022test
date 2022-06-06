@@ -34,4 +34,7 @@ jobs:
           java-version: 1.8 
       - name: Add Platform
         run: |
-         ionic cordova platform add android@10.0.0 --nofetch
+         ionic cordova build android
+#       - name: Add Platform
+#         run: |
+#          ionic cordova platform add android@10.0.0 --nofetch
