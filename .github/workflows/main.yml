@@ -30,6 +30,9 @@ jobs:
       - name: npm
         run: npm install
 
+      - name: typings
+        run: npm update -g typings
+
       - name: Add Android platform
         run: ionic cordova platform add android@10.0.0
 
