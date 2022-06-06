@@ -24,7 +24,7 @@ jobs:
           npm uninstall cordova-res
       - name: Install cordova res
         run: |
-          npm install cordova-res
+          npm install -g cordova-res
       - name: Add cordova-android
         run: |
          npm i cordova-android
