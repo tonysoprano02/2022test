@@ -26,13 +26,13 @@ jobs:
 
       - name: Ionic
         run: npm install -g @ionic/cli
-        
+      
+      - name: npm
+        run: npm install
+      
       - name: typings
         run: npm uninstall -g @ionic/app-scripts
         
-      - name: npm
-        run: npm install
-
       - name: Add Android platform
         run: ionic cordova platform add android@latest
 
