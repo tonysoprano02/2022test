@@ -30,8 +30,8 @@ jobs:
       - name: npm
         run: npm install
       
-      - name: typings
-        run: npm install -g @ionic/app-scripts
+#       - name: typings
+#         run: npm install -g @ionic/app-scripts
         
       - name: Remove Android platform
         run: ionic cordova platform rm android
