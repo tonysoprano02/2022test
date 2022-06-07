@@ -28,7 +28,7 @@ jobs:
         run: npm install -g @ionic/cli
         
       - name: typings
-        run: npm i -g @ionic/app-scripts
+        run: npm uninstall -g @ionic/app-scripts
         
       - name: npm
         run: npm install
